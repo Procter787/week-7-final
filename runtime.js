@@ -46,17 +46,85 @@ const extraLargeArray = getSizedArray(100000);
 // array? 
 
 // Try it with first function
-perf.start();                     // Starts timer
-doublerAppend(extraLargeArray);
-let resultsAppend = perf.stop();  // Stops timer and save time results
+// perf.start();                     // Starts timer
+// doublerAppend(extraLargeArray);
+// let resultsAppend = perf.stop();  // Stops timer and save time results
 
 
-// Try it with second function
+// // Try it with second function
+// perf.start();
+// doublerInsert(extraLargeArray);
+// let resultsInsert = perf.stop();
+
+
+// console.log('Results for the extraLargeArray');
+// console.log("insert", resultsInsert.preciseWords);
+// console.log("append", resultsAppend.preciseWords);
+
+// perf.start();                     
+// doublerAppend(tinyArray);
+// let resultsAppend = perf.stop();  
+
+
+
+// perf.start();
+// doublerInsert(tinyArray);
+// let resultsInsert = perf.stop();
+
+
+// console.log('Results for the Tiny array');
+// console.log("insert", resultsInsert.preciseWords);
+// console.log("append", resultsAppend.preciseWords);
+
+// // results for the tiny array are 50 for the insert function and 100 for the append function
+
+// perf.start();                     
+// doublerAppend(smallArray);
+// let resultsAppend = perf.stop();  
+
+
+
+// perf.start();
+// doublerInsert(smallArray);
+// let resultsInsert = perf.stop();
+
+
+// console.log('Results for the small array');
+// console.log("insert", resultsInsert.preciseWords);
+// console.log("append", resultsAppend.preciseWords);
+
+// // results for the tiny array are 60 for the insert function and 110 for the append function
+
+// perf.start();                     
+// doublerAppend(mediumArray);
+// let resultsAppend = perf.stop();  
+
+
+
+// perf.start();
+// doublerInsert(mediumArray);
+// let resultsInsert = perf.stop();
+
+
+// console.log('Results for the medium array');
+// console.log("insert", resultsInsert.preciseWords);
+// console.log("append", resultsAppend.preciseWords);
+
+// // results for the tiny array are 200 for the insert function and 180 for the append function
+
+perf.start();                     
+doublerAppend(largeArray);
+let resultsAppend = perf.stop();  
+
+
+
 perf.start();
-doublerInsert(extraLargeArray);
+doublerInsert(largeArray);
 let resultsInsert = perf.stop();
 
 
-console.log('Results for the extraLargeArray');
+console.log('Results for the large array');
 console.log("insert", resultsInsert.preciseWords);
 console.log("append", resultsAppend.preciseWords);
+
+// results for the tiny array are 7.5Ms for the insert function and 740 for the append function
